@@ -6,7 +6,7 @@
         },
         "title": {
             "translate": "advancements.husbandry.obtain_cake.title",
-            "fallback": "The Lie"
+            "fallback": "The Lie..."
         },
         "description": {
             "translate": "advancements.husbandry.obtain_cake.description",
