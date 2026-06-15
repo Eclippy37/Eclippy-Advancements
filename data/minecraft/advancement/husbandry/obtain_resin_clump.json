@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:husbandry/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:resin_clump"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_resin_clump.title",
+            "fallback": "Viscous Resin..."
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_resin_clump.description",
+            "fallback": "Obtain a Resin Clump"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "resin_clump": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:resin_clump"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "resin_clump"
+        ]
+    ]
+}
