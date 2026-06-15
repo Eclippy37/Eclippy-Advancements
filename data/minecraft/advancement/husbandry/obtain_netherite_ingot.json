@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:nether/obtain_ancient_debris",
+    "display": {
+        "icon": {
+            "id": "minecraft:netherite_ingot"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_netherite_ingot.title",
+            "fallback": "Forged in Lava!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_netherite_ingot.description",
+            "fallback": "Obtain a Netherite Ingot"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "netherite_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:netherite_ingot"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "netherite_ingot"
+        ]
+    ]
+}
