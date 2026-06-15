@@ -5,11 +5,11 @@
             "id": "minecraft:netherite_ingot"
         },
         "title": {
-            "translate": "advancements.husbandry.obtain_netherite_ingot.title",
+            "translate": "advancements.nether.obtain_netherite_ingot.title",
             "fallback": "Forged in Lava!"
         },
         "description": {
-            "translate": "advancements.husbandry.obtain_netherite_ingot.description",
+            "translate": "advancements.nether.obtain_netherite_ingot.description",
             "fallback": "Obtain a Netherite Ingot"
         },
         "frame": "task",

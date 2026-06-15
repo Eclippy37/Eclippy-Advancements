@@ -5,11 +5,11 @@
             "id": "minecraft:heavy_core"
         },
         "title": {
-            "translate": "advancements.husbandry.obtain_heavy_core.title",
+            "translate": "advancements.adventure.obtain_heavy_core.title",
             "fallback": "Core Aquired"
         },
         "description": {
-            "translate": "advancements.husbandry.obtain_heavy_core.description",
+            "translate": "advancements.adventure.obtain_heavy_core.description",
             "fallback": "Obtain a Heavy Core"
         },
         "frame": "task",
