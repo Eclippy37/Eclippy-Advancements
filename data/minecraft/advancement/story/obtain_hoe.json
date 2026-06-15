@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:story/obtain_shovel",
+    "display": {
+        "icon": {
+            "id": "minecraft:wooden_hoe"
+        },
+        "title": {
+            "translate": "advancements.story.obtain_hoe.title",
+            "fallback": "Time to Farm!"
+        },
+        "description": {
+            "translate": "advancements.story.obtain_hoe.description",
+            "fallback": "Use planks and sticks to make a hoe"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "hoe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#minecraft:hoes"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "hoe"
+        ]
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:story/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_log"
+        },
+        "title": {
+            "translate": "advancements.story.obtain_log.title",
+            "fallback": "Getting Wood"
+        },
+        "description": {
+            "translate": "advancements.story.obtain_log.description",
+            "fallback": "Punch a tree until a block of wood pops out"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#minecraft:logs"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "log"
+        ]
+    ]
+}

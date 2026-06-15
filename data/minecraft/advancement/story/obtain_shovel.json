@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:story/obtain_axe",
+    "display": {
+        "icon": {
+            "id": "minecraft:wooden_shovel"
+        },
+        "title": {
+            "translate": "advancements.story.obtain_shovel.title",
+            "fallback": "Time to Dig!"
+        },
+        "description": {
+            "translate": "advancements.story.obtain_shovel.description",
+            "fallback": "Use planks and sticks to make a shovel"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#minecraft:shovels"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "shovel"
+        ]
+    ]
+}

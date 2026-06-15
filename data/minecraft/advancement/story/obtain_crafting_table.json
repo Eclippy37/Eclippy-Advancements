@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:story/obtain_log",
+    "display": {
+        "icon": {
+            "id": "minecraft:crafting_table"
+        },
+        "title": {
+            "translate": "advancements.story.obtain_crafting_table.title",
+            "fallback": "Benchmarking"
+        },
+        "description": {
+            "translate": "advancements.story.obtain_crafting_table.description",
+            "fallback": "Craft a Crafting Table with four blocks of wooden planks"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "crafting_table": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:crafting_table"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "crafting_table"
+        ]
+    ]
+}

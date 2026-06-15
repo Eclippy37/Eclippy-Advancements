@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:story/obtain_pickaxe",
+    "display": {
+        "icon": {
+            "id": "minecraft:cobblestone"
+        },
+        "title": {
+            "translate": "advancements.story.mine_stone.title",
+            "fallback": "Stone Age"
+        },
+        "description": {
+            "translate": "advancements.story.mine_stone.description",
+            "fallback": "Mine Stone with your new Pickaxe"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "get_stone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#minecraft:stone_tool_materials"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "get_stone"
+        ]
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:story/obtain_pickaxe",
+    "display": {
+        "icon": {
+            "id": "minecraft:wooden_sword"
+        },
+        "title": {
+            "translate": "advancements.story.obtain_sword.title",
+            "fallback": "Time to Strike!"
+        },
+        "description": {
+            "translate": "advancements.story.obtain_sword.description",
+            "fallback": "Use planks and sticks to make a sword"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#minecraft:swords"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "sword"
+        ]
+    ]
+}

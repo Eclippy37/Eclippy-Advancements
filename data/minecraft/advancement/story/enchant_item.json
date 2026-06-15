@@ -1,0 +1,30 @@
+{
+    "parent": "minecraft:story/mine_diamond",
+    "display": {
+        "icon": {
+            "id": "minecraft:enchanted_book"
+        },
+        "title": {
+            "translate": "advancements.story.enchant_item.title",
+            "fallback": "Enchanter"
+        },
+        "description": {
+            "translate": "advancements.story.enchant_item.description",
+            "fallback": "Enchant an item at an Enchanting Table"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "enchanted_item": {
+            "trigger": "minecraft:enchanted_item"
+        }
+    },
+    "requirements": [
+        [
+            "enchanted_item"
+        ]
+    ]
+}
