@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:husbandry/plant_seed",
+    "display": {
+        "icon": {
+            "id": "minecraft:bread"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_bread.title",
+            "fallback": "Bake Bread"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_bread.description",
+            "fallback": "Grow wheat and use it to bake bread"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "bread": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:bread"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "bread"
+        ]
+    ]
+}

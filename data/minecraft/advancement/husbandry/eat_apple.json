@@ -1,0 +1,35 @@
+{
+    "parent": "minecraft:husbandry/plant_seed",
+    "display": {
+        "icon": {
+            "id": "minecraft:apple"
+        },
+        "title": {
+            "translate": "advancements.husbandry.eat_apple.title",
+            "fallback": "An Apple a Day..."
+        },
+        "description": {
+            "translate": "advancements.husbandry.eat_apple.description",
+            "fallback": "Crunch into an apple"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "apple": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:apple"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "apple"
+        ]
+    ]
+}

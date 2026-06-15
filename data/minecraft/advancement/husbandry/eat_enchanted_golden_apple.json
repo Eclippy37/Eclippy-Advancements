@@ -1,16 +1,16 @@
 {
-    "parent": "minecraft:husbandry/plant_seed",
+    "parent": "minecraft:husbandry/eat_apple",
     "display": {
         "icon": {
             "id": "minecraft:enchanted_golden_apple"
         },
         "title": {
-            "translate": "advancements.husbandry.obtain_enchanted_golden_apple.title",
+            "translate": "advancements.husbandry.eat_enchanted_golden_apple.title",
             "fallback": "Caramel Apples!"
         },
         "description": {
-            "translate": "advancements.husbandry.obtain_enchanted_golden_apple.description",
-            "fallback": "Obtain an Enchanted Golden Apple"
+            "translate": "advancements.husbandry.eat_enchanted_golden_apple.description",
+            "fallback": "Consume a godly apple"
         },
         "frame": "task",
         "show_toast": true,
@@ -19,13 +19,11 @@
     },
     "criteria": {
         "enchanted_golden_apple": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:consume_item",
             "conditions": {
-                "items": [
-                    {
-                        "items": "minecraft:enchanted_golden_apple"
-                    }
-                ]
+                "item": {
+                    "items": "minecraft:enchanted_golden_apple"
+                }
             }
         }
     },
