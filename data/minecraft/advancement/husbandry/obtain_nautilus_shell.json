@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:husbandry/fishy_business",
+    "display": {
+        "icon": {
+            "id": "minecraft:nautilus_shell"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_nautilus_shell.title",
+            "fallback": "Ocean Relic"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_nautilus_shell.description",
+            "fallback": "Obtain a Nautilus Shell"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "nautilus_shell": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:nautilus_shell"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "nautilus_shell"
+        ]
+    ]
+}
