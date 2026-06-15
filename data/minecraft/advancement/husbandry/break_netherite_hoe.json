@@ -2,7 +2,10 @@
     "parent": "minecraft:husbandry/obtain_netherite_hoe",
     "display": {
         "icon": {
-            "id": "minecraft:netherite_hoe"
+            "id": "minecraft:netherite_hoe",
+            "components": {
+                "minecraft:damage": 2031
+            }
         },
         "title": {
             "translate": "advancement.husbandry.break_netherite_hoe.title",
@@ -10,18 +13,21 @@
         },
         "description": {
             "translate": "advancement.husbandry.break_netherite_hoe.description",
-            "fallback": "Break a Netherite Hoe"
+            "fallback": "Break a netherite hoe"
         },
         "frame": "challenge",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": false
+        "hidden": true
     },
     "criteria": {
         "break_netherite_hoe": {
             "trigger": "minecraft:item_durability_changed",
             "conditions": {
-                "durability": 0,
+                "durability": {
+                    "min": -1,
+                    "max": 0
+                },
                 "item": {
                     "items": [
                         "minecraft:netherite_hoe"
