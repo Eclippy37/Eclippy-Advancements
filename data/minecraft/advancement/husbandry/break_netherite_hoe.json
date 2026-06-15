@@ -1,0 +1,41 @@
+{
+    "parent": "minecraft:husbandry/obtain_netherite_hoe",
+    "display": {
+        "icon": {
+            "id": "minecraft:netherite_hoe"
+        },
+        "title": {
+            "translate": "advancement.husbandry.break_netherite_hoe.title",
+            "fallback": "Serious, SERIOUS Dedication"
+        },
+        "description": {
+            "translate": "advancement.husbandry.break_netherite_hoe.description",
+            "fallback": "Break a Netherite Hoe"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "break_netherite_hoe": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "durability": 0,
+                "item": {
+                    "items": [
+                        "minecraft:netherite_hoe"
+                    ]
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "break_netherite_hoe"
+        ]
+    ],
+    "rewards": {
+        "experience": 250
+    }
+}

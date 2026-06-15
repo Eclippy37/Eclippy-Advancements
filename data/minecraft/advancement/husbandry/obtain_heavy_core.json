@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:adventure/minecraft_trials_edition",
+    "display": {
+        "icon": {
+            "id": "minecraft:heavy_core"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_heavy_core.title",
+            "fallback": "Core Aquired"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_heavy_core.description",
+            "fallback": "Obtain a Heavy Core"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "heavy_core": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:heavy_core"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "heavy_core"
+        ]
+    ]
+}

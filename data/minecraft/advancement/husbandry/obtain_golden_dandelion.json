@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:husbandry/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:golden_dandelion"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_golden_dandelion.title",
+            "fallback": "Golden Essence"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_golden_dandelion.description",
+            "fallback": "Obtain a Golden Dandelion"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "golden_dandelion": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:golden_dandelion"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "golden_dandelion"
+        ]
+    ]
+}

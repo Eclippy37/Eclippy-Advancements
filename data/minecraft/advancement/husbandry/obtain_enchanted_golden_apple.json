@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:husbandry/plant_seed",
+    "display": {
+        "icon": {
+            "id": "minecraft:enchanted_golden_apple"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_enchanted_golden_apple.title",
+            "fallback": "Caramel Apples!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_enchanted_golden_apple.description",
+            "fallback": "Obtain an Enchanted Golden Apple"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "enchanted_golden_apple": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:enchanted_golden_apple"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "enchanted_golden_apple"
+        ]
+    ]
+}

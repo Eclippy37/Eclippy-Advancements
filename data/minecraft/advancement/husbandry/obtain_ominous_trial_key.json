@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:adventure/minecraft_trials_edition",
+    "display": {
+        "icon": {
+            "id": "minecraft:ominous_trial_key"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_ominous_trial_key.title",
+            "fallback": "A Mysterious Key"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_ominous_trial_key.description",
+            "fallback": "Obtain an Ominous Trial Key"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "ominous_trial_key": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:ominous_trial_key"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "ominous_trial_key"
+        ]
+    ]
+}
