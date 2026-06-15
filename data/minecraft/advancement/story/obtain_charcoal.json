@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:story/obtain_charcoal",
+    "display": {
+        "icon": {
+            "id": "minecraft:charcoal"
+        },
+        "title": {
+            "translate": "advancements.story.obtain_charcoal.title",
+            "fallback": "Renewable Energy"
+        },
+        "description": {
+            "translate": "advancements.story.obtain_charcoal.description",
+            "fallback": "Smelt wood trunks using charcoal to make more charcoal"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "charcoal": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:charcoal"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "charcoal"
+        ]
+    ]
+}
