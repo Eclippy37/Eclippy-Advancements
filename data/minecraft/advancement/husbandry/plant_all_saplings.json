@@ -1,0 +1,264 @@
+{
+    "parent": "minecraft:husbandry/plant_sapling",
+    "display": {
+        "icon": {
+            "id": "minecraft:jungle_sapling"
+        },
+        "title": {
+            "translate": "advancements.husbandry.plant_all_saplings.title",
+            "fallback": "Ecologist"
+        },
+        "description": {
+            "translate": "advancements.husbandry.plant_all_saplings.description",
+            "fallback": "Plant down all types of saplings"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "oak_sapling": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:oak_sapling"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "spruce_sapling": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:spruce_sapling"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "birch_sapling": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:birch_sapling"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "jungle_sapling": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:jungle_sapling"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "acacia_sapling": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:acacia_sapling"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "dark_oak_sapling": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:dark_oak_sapling"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "azalea": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:azalea"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "flowering_azalea": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:flowering_azalea"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "mangrove_propagule": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:mangrove_propagule"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "bamboo_sapling": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:bamboo_sapling"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "cherry_sapling": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:cherry_sapling"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "pale_oak_sapling": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:pale_oak_sapling"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "oak_sapling"
+        ],
+        [
+            "spruce_sapling"
+        ],
+        [
+            "birch_sapling"
+        ],
+        [
+            "jungle_sapling"
+        ],
+        [
+            "acacia_sapling"
+        ],
+        [
+            "dark_oak_sapling"
+        ],
+        [
+            "azalea"
+        ],
+        [
+            "flowering_azalea"
+        ],
+        [
+            "mangrove_propagule"
+        ],
+        [
+            "bamboo_sapling"
+        ],
+        [
+            "cherry_sapling"
+        ],
+        [
+            "pale_oak_sapling"
+        ]
+    ]
+}

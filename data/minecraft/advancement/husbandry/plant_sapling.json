@@ -5,11 +5,11 @@
             "id": "minecraft:oak_sapling"
         },
         "title": {
-            "translate": "advancements.husbandry.place_sapling.title",
+            "translate": "advancements.husbandry.plant_sapling.title",
             "fallback": "Care For the Environment"
         },
         "description": {
-            "translate": "advancements.husbandry.place_sapling.description",
+            "translate": "advancements.husbandry.plant_sapling.description",
             "fallback": "Plant a sapling to combat deforestation"
         },
         "frame": "task",
