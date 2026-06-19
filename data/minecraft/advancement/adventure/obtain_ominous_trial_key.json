@@ -10,7 +10,7 @@
         },
         "description": {
             "translate": "advancements.adventure.obtain_ominous_trial_key.description",
-            "fallback": "Obtain an Ominous Trial Key"
+            "fallback": "Obtain an ominous trial key to unlock a new vault"
         },
         "frame": "task",
         "show_toast": true,

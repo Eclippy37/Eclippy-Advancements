@@ -10,9 +10,9 @@
         },
         "description": {
             "translate": "advancements.adventure.obtain_heavy_core.description",
-            "fallback": "Obtain a Heavy Core"
+            "fallback": "Waste 7 hours to obtain a heavy core"
         },
-        "frame": "task",
+        "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false
