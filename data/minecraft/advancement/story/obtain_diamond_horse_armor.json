@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:story/shiny_gear",
+    "display": {
+        "icon": {
+            "id": "minecraft:diamond_horse_armor"
+        },
+        "title": {
+            "translate": "advancements.story.obtain_diamond_horse_armor.title",
+            "fallback": "Cover Neigh with Diamonds"
+        },
+        "description": {
+            "translate": "advancements.story.obtain_diamond_horse_armor.description",
+            "fallback": "Obtain shiny diamond armor for your horse"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "diamond_horse_armor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:diamond_horse_armor"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "diamond_horse_armor"
+        ]
+    ]
+}
