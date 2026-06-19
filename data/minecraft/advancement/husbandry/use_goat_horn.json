@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:husbandry/ride_a_boat_with_a_goat",
+    "display": {
+        "icon": {
+            "id": "minecraft:goat_horn"
+        },
+        "title": {
+            "translate": "advancements.husbandry.use_goat_horn.title",
+            "fallback": "Goaty Call"
+        },
+        "description": {
+            "translate": "advancements.husbandry.use_goat_horn.description",
+            "fallback": "Obtain the horn of a goat and blow into it"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "goat_horn": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:goat_horn"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "goat_horn"
+        ]
+    ]
+}
