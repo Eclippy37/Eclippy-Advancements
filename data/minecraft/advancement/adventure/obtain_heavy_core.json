@@ -33,5 +33,8 @@
         [
             "heavy_core"
         ]
-    ]
+    ],
+    "rewards": {
+        "experience": 50
+    }
 }
