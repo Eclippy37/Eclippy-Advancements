@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:husbandry/plant_sapling",
+    "display": {
+        "icon": {
+            "id": "minecraft:sugar_cane"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_sugar_cane.title",
+            "fallback": "Sugar, Sugar"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_sugar_cane.description",
+            "fallback": "Harvest some sugar cane from a river or ocean"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sugar_cane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:sugar_cane"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "sugar_cane"
+        ]
+    ]
+}

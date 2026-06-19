@@ -1,0 +1,43 @@
+{
+    "parent": "minecraft:husbandry/obtain_ink_sac",
+    "display": {
+        "icon": {
+            "id": "minecraft:squid_spawn_egg"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_ink_sac.title",
+            "fallback": "Squid Game"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_ink_sac.description",
+            "fallback": "Hunt enough Squids to collect a stack of Ink Sacs"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "ink_sac": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:ink_sac",
+                        "count": {
+                            "min": 64
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "ink_sac"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    }
+}

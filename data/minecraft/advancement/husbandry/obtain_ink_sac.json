@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:husbandry/obtain_sugar_cane",
+    "display": {
+        "icon": {
+            "id": "minecraft:ink_sac"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_ink_sac.title",
+            "fallback": "It's full of ink!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_ink_sac.description",
+            "fallback": "Obtain some ink from hunting a squid"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "ink_sac": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:ink_sac"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "ink_sac"
+        ]
+    ]
+}
