@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:husbandry/eat_golden_apple",
+    "parent": "eclippy:husbandry/eat_golden_apple",
     "display": {
         "icon": {
             "id": "minecraft:enchanted_golden_apple"

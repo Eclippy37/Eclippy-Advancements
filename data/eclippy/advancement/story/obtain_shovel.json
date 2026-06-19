@@ -1,16 +1,16 @@
 {
-    "parent": "minecraft:husbandry/plant_sapling",
+    "parent": "eclippy:story/obtain_axe",
     "display": {
         "icon": {
-            "id": "minecraft:sugar_cane"
+            "id": "minecraft:wooden_shovel"
         },
         "title": {
-            "translate": "advancements.husbandry.obtain_sugar_cane.title",
-            "fallback": "Sugar, Sugar"
+            "translate": "advancements.story.obtain_shovel.title",
+            "fallback": "Time to Dig!"
         },
         "description": {
-            "translate": "advancements.husbandry.obtain_sugar_cane.description",
-            "fallback": "Harvest some sugar cane from a river or ocean"
+            "translate": "advancements.story.obtain_shovel.description",
+            "fallback": "Use planks and sticks to make a shovel"
         },
         "frame": "task",
         "show_toast": true,
@@ -18,12 +18,12 @@
         "hidden": false
     },
     "criteria": {
-        "sugar_cane": {
+        "shovel": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "items": "minecraft:sugar_cane"
+                        "items": "#minecraft:shovels"
                     }
                 ]
             }
@@ -31,7 +31,7 @@
     },
     "requirements": [
         [
-            "sugar_cane"
+            "shovel"
         ]
     ]
 }

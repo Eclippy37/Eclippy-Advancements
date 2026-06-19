@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:husbandry/plant_sapling",
+    "parent": "eclippy:husbandry/plant_sapling",
     "display": {
         "icon": {
             "id": "minecraft:jungle_sapling"

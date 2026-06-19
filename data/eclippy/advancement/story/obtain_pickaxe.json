@@ -1,16 +1,16 @@
 {
-    "parent": "minecraft:husbandry/root",
+    "parent": "eclippy:story/obtain_crafting_table",
     "display": {
         "icon": {
-            "id": "minecraft:cake"
+            "id": "minecraft:wooden_pickaxe"
         },
         "title": {
-            "translate": "advancements.husbandry.obtain_cake.title",
-            "fallback": "The Lie..."
+            "translate": "advancements.story.obtain_pickaxe.title",
+            "fallback": "Time to Mine!"
         },
         "description": {
-            "translate": "advancements.husbandry.obtain_cake.description",
-            "fallback": "Wheat, milk, sugar, and eggs!"
+            "translate": "advancements.story.obtain_pickaxe.description",
+            "fallback": "Use planks and sticks to make a pickaxe"
         },
         "frame": "task",
         "show_toast": true,
@@ -18,12 +18,12 @@
         "hidden": false
     },
     "criteria": {
-        "cake": {
+        "pickaxe": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "items": "minecraft:cake"
+                        "items": "#minecraft:pickaxes"
                     }
                 ]
             }
@@ -31,7 +31,7 @@
     },
     "requirements": [
         [
-            "cake"
+            "pickaxe"
         ]
     ]
 }

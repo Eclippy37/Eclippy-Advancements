@@ -1,16 +1,16 @@
 {
-    "parent": "minecraft:husbandry/obtain_sugar_cane",
+    "parent": "eclippy:husbandry/obtain_sugar_cane",
     "display": {
         "icon": {
-            "id": "minecraft:ink_sac"
+            "id": "minecraft:cake"
         },
         "title": {
-            "translate": "advancements.husbandry.obtain_ink_sac.title",
-            "fallback": "It's full of ink!"
+            "translate": "advancements.husbandry.obtain_cake.title",
+            "fallback": "The Lie..."
         },
         "description": {
-            "translate": "advancements.husbandry.obtain_ink_sac.description",
-            "fallback": "Obtain some ink from hunting a squid"
+            "translate": "advancements.husbandry.obtain_cake.description",
+            "fallback": "Wheat, sugar, milk and eggs!"
         },
         "frame": "task",
         "show_toast": true,
@@ -18,12 +18,12 @@
         "hidden": false
     },
     "criteria": {
-        "ink_sac": {
+        "cake": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "items": "minecraft:ink_sac"
+                        "items": "minecraft:cake"
                     }
                 ]
             }
@@ -31,7 +31,7 @@
     },
     "requirements": [
         [
-            "ink_sac"
+            "cake"
         ]
     ]
 }

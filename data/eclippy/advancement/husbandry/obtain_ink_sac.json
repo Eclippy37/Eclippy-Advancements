@@ -1,16 +1,16 @@
 {
-    "parent": "minecraft:story/obtain_charcoal",
+    "parent": "eclippy:husbandry/obtain_sugar_cane",
     "display": {
         "icon": {
-            "id": "minecraft:charcoal"
+            "id": "minecraft:ink_sac"
         },
         "title": {
-            "translate": "advancements.story.obtain_charcoal.title",
-            "fallback": "Renewable Energy"
+            "translate": "advancements.husbandry.obtain_ink_sac.title",
+            "fallback": "It's full of ink!"
         },
         "description": {
-            "translate": "advancements.story.obtain_charcoal.description",
-            "fallback": "Smelt wood trunks using charcoal to make more charcoal"
+            "translate": "advancements.husbandry.obtain_ink_sac.description",
+            "fallback": "Obtain some ink from hunting a squid"
         },
         "frame": "task",
         "show_toast": true,
@@ -18,12 +18,12 @@
         "hidden": false
     },
     "criteria": {
-        "charcoal": {
+        "ink_sac": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "items": "minecraft:charcoal"
+                        "items": "minecraft:ink_sac"
                     }
                 ]
             }
@@ -31,7 +31,7 @@
     },
     "requirements": [
         [
-            "charcoal"
+            "ink_sac"
         ]
     ]
 }

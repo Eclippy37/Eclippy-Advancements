@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:husbandry/obtain_ink_sac",
+    "parent": "eclippy:husbandry/obtain_ink_sac",
     "display": {
         "icon": {
             "id": "minecraft:squid_spawn_egg"

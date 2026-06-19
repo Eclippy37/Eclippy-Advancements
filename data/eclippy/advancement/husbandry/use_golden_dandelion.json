@@ -1,16 +1,16 @@
 {
-    "parent": "minecraft:husbandry/root",
+    "parent": "minecraft:husbandry/breed_an_animal",
     "display": {
         "icon": {
             "id": "minecraft:golden_dandelion"
         },
         "title": {
-            "translate": "advancements.husbandry.obtain_golden_dandelion.title",
+            "translate": "advancements.husbandry.use_golden_dandelion.title",
             "fallback": "Golden Essence"
         },
         "description": {
-            "translate": "advancements.husbandry.obtain_golden_dandelion.description",
-            "fallback": "Obtain a Golden Dandelion"
+            "translate": "advancements.husbandry.use_golden_dandelion.description",
+            "fallback": "Use a golden dandelion on a pet to stop them growing up"
         },
         "frame": "task",
         "show_toast": true,
@@ -19,13 +19,11 @@
     },
     "criteria": {
         "golden_dandelion": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
-                "items": [
-                    {
-                        "items": "minecraft:golden_dandelion"
-                    }
-                ]
+                "item": {
+                    "items": "minecraft:golden_dandelion"
+                }
             }
         }
     },

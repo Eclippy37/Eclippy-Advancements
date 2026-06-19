@@ -1,16 +1,16 @@
 {
-    "parent": "minecraft:husbandry/obtain_bread",
+    "parent": "eclippy:story/obtain_sword",
     "display": {
         "icon": {
-            "id": "minecraft:cocoa_beans"
+            "id": "minecraft:wooden_axe"
         },
         "title": {
-            "translate": "advancements.husbandry.obtain_cocoa_beans.title",
-            "fallback": "It's Where Nutella Comes From"
+            "translate": "advancements.story.obtain_axe.title",
+            "fallback": "Time to Chop!"
         },
         "description": {
-            "translate": "advancements.husbandry.obtain_cocoa_beans.description",
-            "fallback": "Obtain some cocoa beans from a jungle"
+            "translate": "advancements.story.obtain_axe.description",
+            "fallback": "Use planks and sticks to make an axe"
         },
         "frame": "task",
         "show_toast": true,
@@ -18,12 +18,12 @@
         "hidden": false
     },
     "criteria": {
-        "cocoa_beans": {
+        "axe": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "items": "minecraft:cocoa_beans"
+                        "items": "#minecraft:axes"
                     }
                 ]
             }
@@ -31,7 +31,7 @@
     },
     "requirements": [
         [
-            "cocoa_beans"
+            "axe"
         ]
     ]
 }

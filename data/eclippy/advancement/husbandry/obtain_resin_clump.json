@@ -1,16 +1,16 @@
 {
-    "parent": "minecraft:husbandry/fishy_business",
+    "parent": "minecraft:husbandry/root",
     "display": {
         "icon": {
-            "id": "minecraft:nautilus_shell"
+            "id": "minecraft:resin_clump"
         },
         "title": {
-            "translate": "advancements.husbandry.obtain_nautilus_shell.title",
-            "fallback": "Ocean Relic"
+            "translate": "advancements.husbandry.obtain_resin_clump.title",
+            "fallback": "Viscous Resin..."
         },
         "description": {
-            "translate": "advancements.husbandry.obtain_nautilus_shell.description",
-            "fallback": "Obtain a Nautilus Shell"
+            "translate": "advancements.husbandry.obtain_resin_clump.description",
+            "fallback": "Obtain a resin clump"
         },
         "frame": "task",
         "show_toast": true,
@@ -18,12 +18,12 @@
         "hidden": false
     },
     "criteria": {
-        "nautilus_shell": {
+        "resin_clump": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "items": "minecraft:nautilus_shell"
+                        "items": "minecraft:resin_clump"
                     }
                 ]
             }
@@ -31,7 +31,7 @@
     },
     "requirements": [
         [
-            "nautilus_shell"
+            "resin_clump"
         ]
     ]
 }

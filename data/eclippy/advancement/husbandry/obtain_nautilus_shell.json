@@ -1,16 +1,16 @@
 {
-    "parent": "minecraft:nether/obtain_ancient_debris",
+    "parent": "minecraft:husbandry/fishy_business",
     "display": {
         "icon": {
-            "id": "minecraft:netherite_ingot"
+            "id": "minecraft:nautilus_shell"
         },
         "title": {
-            "translate": "advancements.nether.obtain_netherite_ingot.title",
-            "fallback": "Forged in Lava!"
+            "translate": "advancements.husbandry.obtain_nautilus_shell.title",
+            "fallback": "Ocean Relic"
         },
         "description": {
-            "translate": "advancements.nether.obtain_netherite_ingot.description",
-            "fallback": "Obtain a Netherite Ingot"
+            "translate": "advancements.husbandry.obtain_nautilus_shell.description",
+            "fallback": "Obtain a nautilus shell"
         },
         "frame": "task",
         "show_toast": true,
@@ -18,12 +18,12 @@
         "hidden": false
     },
     "criteria": {
-        "netherite_ingot": {
+        "nautilus_shell": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "items": "minecraft:netherite_ingot"
+                        "items": "minecraft:nautilus_shell"
                     }
                 ]
             }
@@ -31,7 +31,7 @@
     },
     "requirements": [
         [
-            "netherite_ingot"
+            "nautilus_shell"
         ]
     ]
 }

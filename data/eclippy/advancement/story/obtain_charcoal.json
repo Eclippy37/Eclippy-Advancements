@@ -1,16 +1,16 @@
 {
-    "parent": "minecraft:story/obtain_pickaxe",
+    "parent": "eclippy:story/obtain_furnace",
     "display": {
         "icon": {
-            "id": "minecraft:wooden_sword"
+            "id": "minecraft:charcoal"
         },
         "title": {
-            "translate": "advancements.story.obtain_sword.title",
-            "fallback": "Time to Strike!"
+            "translate": "advancements.story.obtain_charcoal.title",
+            "fallback": "Renewable Energy"
         },
         "description": {
-            "translate": "advancements.story.obtain_sword.description",
-            "fallback": "Use planks and sticks to make a sword"
+            "translate": "advancements.story.obtain_charcoal.description",
+            "fallback": "Smelt wood trunks using charcoal to make more charcoal"
         },
         "frame": "task",
         "show_toast": true,
@@ -18,12 +18,12 @@
         "hidden": false
     },
     "criteria": {
-        "sword": {
+        "charcoal": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "items": "#minecraft:swords"
+                        "items": "minecraft:charcoal"
                     }
                 ]
             }
@@ -31,7 +31,7 @@
     },
     "requirements": [
         [
-            "sword"
+            "charcoal"
         ]
     ]
 }

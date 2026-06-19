@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:husbandry/eat_sweet_berries",
+    "parent": "eclippy:husbandry/eat_sweet_berries",
     "display": {
         "icon": {
             "id": "minecraft:spruce_leaves"

@@ -1,16 +1,16 @@
 {
-    "parent": "minecraft:story/obtain_axe",
+    "parent": "eclippy:story/obtain_log",
     "display": {
         "icon": {
-            "id": "minecraft:wooden_shovel"
+            "id": "minecraft:crafting_table"
         },
         "title": {
-            "translate": "advancements.story.obtain_shovel.title",
-            "fallback": "Time to Dig!"
+            "translate": "advancements.story.obtain_crafting_table.title",
+            "fallback": "Benchmarking"
         },
         "description": {
-            "translate": "advancements.story.obtain_shovel.description",
-            "fallback": "Use planks and sticks to make a shovel"
+            "translate": "advancements.story.obtain_crafting_table.description",
+            "fallback": "Craft a Crafting Table with four blocks of wooden planks"
         },
         "frame": "task",
         "show_toast": true,
@@ -18,12 +18,12 @@
         "hidden": false
     },
     "criteria": {
-        "shovel": {
+        "crafting_table": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "items": "#minecraft:shovels"
+                        "items": "minecraft:crafting_table"
                     }
                 ]
             }
@@ -31,7 +31,7 @@
     },
     "requirements": [
         [
-            "shovel"
+            "crafting_table"
         ]
     ]
 }
