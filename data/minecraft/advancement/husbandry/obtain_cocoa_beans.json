@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:husbandry/obtain_bread",
+    "display": {
+        "icon": {
+            "id": "minecraft:cocoa_beans"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_cocoa_beans.title",
+            "fallback": "It's Where Nutella Comes From"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_cocoa_beans.description",
+            "fallback": "Obtain some cocoa beans from a jungle"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "cocoa_beans": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:cocoa_beans"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "cocoa_beans"
+        ]
+    ]
+}
