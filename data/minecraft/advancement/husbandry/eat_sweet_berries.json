@@ -1,0 +1,35 @@
+{
+    "parent": "minecraft:husbandry/plant_seed",
+    "display": {
+        "icon": {
+            "id": "minecraft:sweet_berries"
+        },
+        "title": {
+            "translate": "advancements.husbandry.eat_sweet_berries.title",
+            "fallback": "Berry Nice!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.eat_sweet_berries.description",
+            "fallback": "Pick and eat some sweet berries"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sweet_berries": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:sweet_berries"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "sweet_berries"
+        ]
+    ]
+}

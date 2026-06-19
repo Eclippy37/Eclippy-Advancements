@@ -1,0 +1,35 @@
+{
+    "parent": "minecraft:husbandry/eat_carrot",
+    "display": {
+        "icon": {
+            "id": "minecraft:golden_carrot"
+        },
+        "title": {
+            "translate": "advancements.husbandry.eat_golden_carrot.title",
+            "fallback": "24 Carrot Gold"
+        },
+        "description": {
+            "translate": "advancements.husbandry.eat_golden_carrot.description",
+            "fallback": "Eat a golden carrot"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "golden_carrot": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:golden_carrot"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "golden_carrot"
+        ]
+    ]
+}

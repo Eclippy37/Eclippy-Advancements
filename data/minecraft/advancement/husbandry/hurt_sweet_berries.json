@@ -1,0 +1,56 @@
+{
+    "parent": "minecraft:husbandry/eat_sweet_berries",
+    "display": {
+        "icon": {
+            "id": "minecraft:spruce_leaves"
+        },
+        "title": {
+            "translate": "advancements.husbandry.hurt_sweet_berries.title",
+            "fallback": "Disen Berry Berry Bad!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.hurt_sweet_berries.description",
+            "fallback": "Get stuck in a sweet berry bush. Oh, icky yucky goo!"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sweet_berry_bush_1": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:sweet_berry_bush",
+                "state": {
+                    "age": "1"
+                }
+            }
+        },
+        "sweet_berry_bush_2": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:sweet_berry_bush",
+                "state": {
+                    "age": "2"
+                }
+            }
+        },
+        "sweet_berry_bush_3": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:sweet_berry_bush",
+                "state": {
+                    "age": "3"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "sweet_berry_bush_1",
+            "sweet_berry_bush_2",
+            "sweet_berry_bush_3"
+        ]
+    ]
+}

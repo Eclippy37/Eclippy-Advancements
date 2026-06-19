@@ -1,0 +1,42 @@
+{
+    "parent": "minecraft:husbandry/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_sapling"
+        },
+        "title": {
+            "translate": "advancements.husbandry.place_sapling.title",
+            "fallback": "Care For the Environment"
+        },
+        "description": {
+            "translate": "advancements.husbandry.place_sapling.description",
+            "fallback": "Plant a sapling to combat deforestation"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sapling": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "#minecraft:saplings"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "sapling"
+        ]
+    ]
+}

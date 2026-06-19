@@ -1,0 +1,53 @@
+{
+    "parent": "minecraft:husbandry/plant_seed",
+    "display": {
+        "icon": {
+            "id": "minecraft:potato"
+        },
+        "title": {
+            "translate": "advancements.husbandry.eat_potato.title",
+            "fallback": "The Great Potato War"
+        },
+        "description": {
+            "translate": "advancements.husbandry.eat_potato.description",
+            "fallback": "Eat the produce of the #1 Potato Farmer in Skyblock"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "potato": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:potato"
+                }
+            }
+        },
+        "baked_potato": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:baked_potato"
+                }
+            }
+        },
+        "poisonous_potato": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:poisonous_potato"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "potato",
+            "baked_potato",
+            "poisonous_potato"
+        ]
+    ]
+}
