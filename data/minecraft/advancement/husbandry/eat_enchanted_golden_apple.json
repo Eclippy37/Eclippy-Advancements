@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:husbandry/eat_apple",
+    "parent": "minecraft:husbandry/eat_golden_apple",
     "display": {
         "icon": {
             "id": "minecraft:enchanted_golden_apple"
@@ -12,7 +12,7 @@
             "translate": "advancements.husbandry.eat_enchanted_golden_apple.description",
             "fallback": "Consume a godly apple"
         },
-        "frame": "task",
+        "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false
@@ -31,5 +31,8 @@
         [
             "enchanted_golden_apple"
         ]
-    ]
+    ],
+    "rewards": {
+        "experience": 50
+    }
 }
