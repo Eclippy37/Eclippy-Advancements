@@ -1,0 +1,33 @@
+{
+    "parent": "eclippy:husbandry/obtain_cactus",
+    "display": {
+        "icon": {
+            "id": "minecraft:cactus"
+        },
+        "title": {
+            "translate": "advancements.husbandry.hurt_cactus.title",
+            "fallback": "Spikey!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.hurt_cactus.description",
+            "fallback": "Run into a cactus"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "cactus": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:cactus"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "cactus"
+        ]
+    ]
+}

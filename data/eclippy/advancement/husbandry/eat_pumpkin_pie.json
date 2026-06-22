@@ -1,0 +1,35 @@
+{
+    "parent": "eclippy:husbandry/obtain_pumpkin",
+    "display": {
+        "icon": {
+            "id": "minecraft:pumpkin_pie"
+        },
+        "title": {
+            "translate": "advancements.husbandry.eat_pumpkin_pie.title",
+            "fallback": "The Pie"
+        },
+        "description": {
+            "translate": "advancements.husbandry.eat_pumpkin_pie.description",
+            "fallback": "Bake a pumpkin pie"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "pumpkin_pie": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:pumpkin_pie"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "pumpkin_pie"
+        ]
+    ]
+}

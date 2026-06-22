@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:husbandry/plant_seed",
+    "display": {
+        "icon": {
+            "id": "minecraft:pumpkin"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_pumpkin.title",
+            "fallback": "Naturally Carved"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_pumpkin.description",
+            "fallback": "Harvest some spooky pumpkins"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "pumpkin": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:pumpkin"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "pumpkin"
+        ]
+    ]
+}

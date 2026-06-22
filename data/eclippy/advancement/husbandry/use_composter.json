@@ -1,0 +1,45 @@
+{
+    "parent": "eclippy:husbandry/place_composter",
+    "display": {
+        "icon": {
+            "id": "minecraft:podzol"
+        },
+        "title": {
+            "translate": "advancements.husbandry.use_composter.title",
+            "fallback": "Natural Fertiliser"
+        },
+        "description": {
+            "translate": "advancements.husbandry.use_composter.description",
+            "fallback": "Fill up a composter"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "composter": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:composter",
+                                "state": {
+                                    "level": "7"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "composter"
+        ]
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "parent": "eclippy:husbandry/obtain_pumpkin",
+    "display": {
+        "icon": {
+            "id": "minecraft:melon_slice"
+        },
+        "title": {
+            "translate": "advancements.husbandry.eat_melon_slice.title",
+            "fallback": "The Melon! The Melon! The Melon!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.eat_melon_slice.description",
+            "fallback": "Eat a melon. Be careful not to drop it over a cliff"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "melon_slice": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:melon_slice"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "melon_slice"
+        ]
+    ]
+}

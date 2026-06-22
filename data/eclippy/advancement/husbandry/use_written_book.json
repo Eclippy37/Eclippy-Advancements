@@ -1,0 +1,78 @@
+{
+    "parent": "eclippy:husbandry/obtain_writable_book",
+    "display": {
+        "icon": {
+            "id": "minecraft:written_book"
+        },
+        "title": {
+            "translate": "advancements.husbandry.use_written_book.title",
+            "fallback": "An Amazing Story!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.use_written_book.description",
+            "fallback": "Check out the finished copy of a book"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "mainhand": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "nbt": {},
+                    "equipment": {
+                        "mainhand": {
+                            "items": "minecraft:written_book"
+                        }
+                    }
+                }
+            }
+        },
+        "offhand": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "nbt": {},
+                    "equipment": {
+                        "offhand": {
+                            "items": "minecraft:written_book"
+                        }
+                    }
+                }
+            }
+        },
+        "lectern": {
+            "trigger": "minecraft:default_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:lectern",
+                                "nbt": {
+                                    "Book": {
+                                        "id": "minecraft:written_book"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "mainhand",
+            "offhand",
+            "lectern"
+        ]
+    ],
+    "rewards": {
+        "experience": 30
+    }
+}

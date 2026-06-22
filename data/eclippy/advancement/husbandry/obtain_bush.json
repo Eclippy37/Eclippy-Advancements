@@ -1,0 +1,37 @@
+{
+    "parent": "eclippy:husbandry/obtain_grass",
+    "display": {
+        "icon": {
+            "id": "minecraft:bush"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_bush.title",
+            "fallback": "Booshes"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_bush.description",
+            "fallback": "Collect some Bushes"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "bush": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:bush"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "bush"
+        ]
+    ]
+}

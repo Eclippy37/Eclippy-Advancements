@@ -1,0 +1,42 @@
+{
+    "parent": "eclippy:husbandry/obtain_leaves",
+    "display": {
+        "icon": {
+            "id": "minecraft:short_grass"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_grass.title",
+            "fallback": "Foliage"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_grass.description",
+            "fallback": "Use shears to pick up short grass or ferns"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "grass": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:short_grass",
+                            "minecraft:fern",
+                            "minecraft:short_dry_grass",
+                            "minecraft:tall_dry_grass"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "grass"
+        ]
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "parent": "eclippy:husbandry/eat_melon_slice",
+    "display": {
+        "icon": {
+            "id": "minecraft:melon"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_melon.title",
+            "fallback": "Scientific Inaccuracy"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_melon.description",
+            "fallback": "Craft 9 melon slices back into a block that, when broken, will probably not give you all 9 slices back"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "melon": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:melon"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "melon"
+        ]
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "parent": "eclippy:husbandry/eat_beetroot",
+    "display": {
+        "icon": {
+            "id": "minecraft:beetroot_soup"
+        },
+        "title": {
+            "translate": "advancements.husbandry.eat_beetroot_soup.title",
+            "fallback": "Souperman"
+        },
+        "description": {
+            "translate": "advancements.husbandry.eat_beetroot_soup.description",
+            "fallback": "Beetroot soup gives you souperpowers!"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "beetroot_soup": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:beetroot_soup"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "beetroot_soup"
+        ]
+    ]
+}

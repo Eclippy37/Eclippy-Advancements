@@ -1,0 +1,46 @@
+{
+    "parent": "eclippy:husbandry/eat_cookie",
+    "display": {
+        "icon": {
+            "id": "minecraft:brown_concrete_powder"
+        },
+        "title": {
+            "translate": "advancements.husbandry.place_cocoa_bean_nether.title",
+            "fallback": "Hot Chocolate"
+        },
+        "description": {
+            "translate": "advancements.husbandry.place_cocoa_bean_nether.description",
+            "fallback": "Plant some cocoa in the nice steamy Nether"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "cocoa": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:cocoa"
+                            },
+                            "dimension": "minecraft:the_nether"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "cocoa"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "parent": "eclippy:husbandry/obtain_sugar_cane",
+    "display": {
+        "icon": {
+            "id": "minecraft:kelp"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_kelp.title",
+            "fallback": "Kelp Me!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_kelp.description",
+            "fallback": "Collect some kelp from an ocean"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "kelp": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:kelp"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "kelp"
+        ]
+    ]
+}

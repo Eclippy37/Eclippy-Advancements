@@ -1,0 +1,37 @@
+{
+    "parent": "eclippy:husbandry/plant_sapling",
+    "display": {
+        "icon": {
+            "id": "minecraft:green_dye"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_cactus.title",
+            "fallback": "It's a cactus!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_cactus.description",
+            "fallback": "Break down a cactus in a desert"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "cactus": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:cactus"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "cactus"
+        ]
+    ]
+}

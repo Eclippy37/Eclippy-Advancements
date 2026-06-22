@@ -1,0 +1,42 @@
+{
+    "parent": "minecraft:husbandry/plant_seed",
+    "display": {
+        "icon": {
+            "id": "minecraft:composter"
+        },
+        "title": {
+            "translate": "advancements.husbandry.place_composter.title",
+            "fallback": "The Garbage will do!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.place_composter.description",
+            "fallback": "Craft a composter using wooden slabs then place it"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "composter": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:composter"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "composter"
+        ]
+    ]
+}

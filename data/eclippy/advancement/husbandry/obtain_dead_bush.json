@@ -1,0 +1,37 @@
+{
+    "parent": "eclippy:husbandry/obtain_grass",
+    "display": {
+        "icon": {
+            "id": "minecraft:dead_bush"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_dead_bush.title",
+            "fallback": "Yay! Deadbush!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_dead_bush.description",
+            "fallback": "Get a deadbush cause you're a noob"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "dead_bush": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:dead_bush"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "dead_bush"
+        ]
+    ]
+}

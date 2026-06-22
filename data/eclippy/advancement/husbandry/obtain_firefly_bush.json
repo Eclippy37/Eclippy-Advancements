@@ -1,0 +1,37 @@
+{
+    "parent": "eclippy:husbandry/obtain_bush",
+    "display": {
+        "icon": {
+            "id": "minecraft:firefly_bush"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_firefly_bush.title",
+            "fallback": "2 Pixels"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_firefly_bush.description",
+            "fallback": "Obtain a firefly bush"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "firefly_bush": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:firefly_bush"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "firefly_bush"
+        ]
+    ]
+}

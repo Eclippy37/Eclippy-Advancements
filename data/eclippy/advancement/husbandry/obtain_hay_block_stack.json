@@ -1,0 +1,43 @@
+{
+    "parent": "eclippy:husbandry/obtain_bread",
+    "display": {
+        "icon": {
+            "id": "minecraft:hay_block",
+            "components": {
+                "minecraft:enchantment_glint_override": true
+            }
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_hay_block_stack.title",
+            "fallback": "Hay there!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_hay_block_stack.description",
+            "fallback": "Craft a stack of hay blocks"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "hay_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:hay_block"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "hay_block"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    }
+}

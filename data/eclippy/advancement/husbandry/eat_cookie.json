@@ -1,0 +1,35 @@
+{
+    "parent": "eclippy:husbandry/obtain_cocoa_beans",
+    "display": {
+        "icon": {
+            "id": "minecraft:cookie"
+        },
+        "title": {
+            "translate": "advancements.husbandry.eat_cookie.title",
+            "fallback": "Me Love Cookie"
+        },
+        "description": {
+            "translate": "advancements.husbandry.eat_cookie.description",
+            "fallback": "Bake some cookies... and then scoff them all yourself"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "cookie": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:cookie"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "cookie"
+        ]
+    ]
+}

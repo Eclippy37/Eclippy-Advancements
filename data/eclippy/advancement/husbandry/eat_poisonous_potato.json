@@ -1,0 +1,35 @@
+{
+    "parent": "eclippy:husbandry/eat_potato",
+    "display": {
+        "icon": {
+            "id": "minecraft:poisonous_potato"
+        },
+        "title": {
+            "translate": "advancements.husbandry.eat_poisonous_potato.title",
+            "fallback": "Not Today!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.eat_poisonous_potato.description",
+            "fallback": "Eat a poisonous potato"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "poisonous_potato": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:poisonous_potato"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "poisonous_potato"
+        ]
+    ]
+}

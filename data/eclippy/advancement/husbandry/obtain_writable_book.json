@@ -1,0 +1,37 @@
+{
+    "parent": "eclippy:husbandry/obtain_ink_sac",
+    "display": {
+        "icon": {
+            "id": "minecraft:writable_book"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_writable_book.title",
+            "fallback": "Write your thoughts"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_writable_book.description",
+            "fallback": "Use a book, ink and a feather to craft a book and quill"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "writable_book": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:writable_book"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "writable_book"
+        ]
+    ]
+}

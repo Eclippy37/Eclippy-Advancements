@@ -1,0 +1,37 @@
+{
+    "parent": "eclippy:husbandry/plant_sapling",
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_leaves"
+        },
+        "title": {
+            "translate": "advancements.husbandry.obtain_leaves.title",
+            "fallback": "Trimming the Treetops"
+        },
+        "description": {
+            "translate": "advancements.husbandry.obtain_leaves.description",
+            "fallback": "Use shears to obtain leaf blocks"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "leaves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#minecraft:leaves"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "leaves"
+        ]
+    ]
+}

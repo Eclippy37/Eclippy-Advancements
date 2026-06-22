@@ -33,21 +33,12 @@
                     "items": "minecraft:baked_potato"
                 }
             }
-        },
-        "poisonous_potato": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "minecraft:poisonous_potato"
-                }
-            }
         }
     },
     "requirements": [
         [
             "potato",
-            "baked_potato",
-            "poisonous_potato"
+            "baked_potato"
         ]
     ]
 }

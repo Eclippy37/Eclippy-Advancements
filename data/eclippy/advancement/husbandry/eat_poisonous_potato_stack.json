@@ -1,0 +1,57 @@
+{
+    "parent": "eclippy:husbandry/eat_poisonous_potato",
+    "display": {
+        "icon": {
+            "id": "minecraft:player_head",
+            "components": {
+                "profile": {
+                    "id": [
+                        -1916685756,
+                        -813938323,
+                        -1292989598,
+                        20461233
+                    ],
+                    "properties": [
+                        {
+                            "name": "textures",
+                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVkMDdlNjhmMDQ2Njc3NDBiYjZlYmI5NzlhZGM4MjMyMWJjYmFlNWNkNDU4Njk3NjkwMzdjMzY1NGQ2YjZkNyJ9fX0="
+                        }
+                    ]
+                }
+            }
+        },
+        "title": {
+            "translate": "advancements.husbandry.eat_poisonous_potato_stack.title",
+            "fallback": "Certified Spud Chomper"
+        },
+        "description": {
+            "translate": "advancements.husbandry.eat_poisonous_potato_stack.description",
+            "fallback": "Eat a stack of poisonous potatoes. Ew..."
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "poisonous_potato": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:poisonous_potato",
+                    "count": {
+                        "min": 2
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "poisonous_potato"
+        ]
+    ],
+    "rewards": {
+        "experience": 250
+    }
+}

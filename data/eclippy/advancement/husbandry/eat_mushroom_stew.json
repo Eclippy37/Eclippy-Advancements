@@ -1,0 +1,35 @@
+{
+    "parent": "eclippy:husbandry/obtain_mushrooms",
+    "display": {
+        "icon": {
+            "id": "minecraft:mushroom_stew"
+        },
+        "title": {
+            "translate": "advancements.husbandry.eat_mushroom_stew.title",
+            "fallback": "Mushroom, Mushroom!"
+        },
+        "description": {
+            "translate": "advancements.husbandry.eat_mushroom_stew.description",
+            "fallback": "Slurp some mushroom stew"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "mushroom_stew": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:mushroom_stew"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "mushroom_stew"
+        ]
+    ]
+}

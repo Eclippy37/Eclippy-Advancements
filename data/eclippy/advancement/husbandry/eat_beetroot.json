@@ -1,0 +1,35 @@
+{
+    "parent": "minecraft:husbandry/plant_seed",
+    "display": {
+        "icon": {
+            "id": "minecraft:beetroot"
+        },
+        "title": {
+            "translate": "advancements.husbandry.eat_beetroot.title",
+            "fallback": "Un-beet-able"
+        },
+        "description": {
+            "translate": "advancements.husbandry.eat_beetroot.description",
+            "fallback": "Eat the best food in the game"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "beetroot": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:beetroot"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "beetroot"
+        ]
+    ]
+}
